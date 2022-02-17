@@ -16,6 +16,7 @@ p{
 .flex {
     display: flex;
     justify-content: space-between;
+    /* flex-wrap: wrap; */
 }
 
 nav {
@@ -47,22 +48,25 @@ nav {
     color: #444444;
 }
 
+.main__title{
+    text-align: center;
+}
 
 .main__wrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    padding: .25rem;
+
 }
 
 .main__image__wrapper{
     max-width: 50%;
     padding: .25rem;
+    box-sizing: border-box;
 }
 
 .main__image {
     display: block;
-    
-    max-width: 100%;
     max-width: 100%;
 }
 
@@ -70,6 +74,7 @@ nav {
     width: 50%;
     padding: .25rem;
     padding-top: 0;
+    box-sizing: border-box;
 }
 
 .main__descr {
@@ -218,20 +223,24 @@ td a {
 
 form {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
+    padding-top: 2rem;
 }
 
 form .input {
     display: block;
-    width: 25%;
+    width: 100%;
     max-width: 250px;
     height: 40px;
     border: 1px solid #444;
     border-radius: 5px;
     box-sizing: border-box;
     padding: 1rem;
+    margin-bottom: 5px;
 }
 button.button{
     padding: 0;
@@ -242,4 +251,20 @@ footer{
     margin-top: 30px;
     padding: .5rem;
     padding-bottom: 3rem;
+}
+
+
+.left-sidebar{
+    min-width: 20%;
+    max-width: 25%;
+    padding: 0.25rem;
+    box-sizing:border-box;
+}
+.main{
+}
+.right-sidebar{
+    min-width: 20%;
+    max-width: 25%;
+    padding: 0.25rem;
+    box-sizing:border-box;
 }
