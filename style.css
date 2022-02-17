@@ -196,9 +196,7 @@ nav {
 
 .hobbies-promo{
     height: 100vh;
-    /* display: flex;
-    align-items: center;
-    justify-content: center; */
+    
     background-image: url("./img/hobby-back.jpg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -268,6 +266,7 @@ footer{
     max-width: 20%;
     padding: 0.5rem;
     box-sizing:border-box;
+    border: 1px solid skyblue;
 }
 .main{
     padding: 0.5rem;
@@ -281,6 +280,7 @@ footer{
     flex-direction: column;
     justify-content: end;
     position: relative;
+    border: 1px solid skyblue;
 }
 
 .left-sidebar .nav__list,
